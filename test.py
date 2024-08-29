@@ -3,7 +3,7 @@ from generators.image_gen import ImageGenerator
 from social_publishers.vk_publisher import VKPublisher
 import config as conf
 
-post_gen = PostGenerator(conf.openai_key, tone="позитивный и веселый", topic="Польза LPG-массажа", proxy=conf.proxy)
+post_gen = PostGenerator(conf.openai_key, tone="креативный", topic="Польза LPG-массажа", proxy=conf.proxy)
 content = post_gen.generate_post()
 img_desc = post_gen.generate_post_image_description()
 
